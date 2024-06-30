@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color:$colornegropuro;
+    color: $colorblancopuro;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .box{
+    background-color: $colornegroopacido;
+  }
+ /* Estilos para cuando el header está en posición fija */
+.fixed-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colornegropuro; /* Ajusta según tu diseño */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.fixed-header .containera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.fixed-header .box {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-header .box h1 a{
+  margin: 0;
+  font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+}
+
+.fixed-header .box h2 {
+  margin-left: 10px; /* Espacio entre el título principal y el subtítulo */
+  font-size: 1.2rem; /* Ajusta el tamaño según tus necesidades */
+}
+
+.fixed-header nav {
+  margin-left: auto; /* Mueve el nav a la izquierda */
+}
+
+.fixed-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed-header nav ul li {
+  display: inline;
+}
+
+.fixed-header nav ul li a {
+  text-decoration: none;
+  color: $colorblancopuro;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.fixed-header nav ul li a:hover {
+  text-shadow: 0px 4px 4px rgb(250, 246, 246);
+}
+
+main {
+  margin-top: 100px; /* Altura del header para evitar que el contenido se superponga */
+}
+
+  
+  nav {
+    margin: 50px;
+  }
+  main {
+    width: 100%;
+  }
+  .containera {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 1s ease, transform 1s ease;
+    margin: 30px;
+  }
+  
+  .box h1 a{
+    font-family: 'Serpentine Bold', sans-serif;
+    font-size: 4rem;
+    color: $colorblancopuro;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+        background-position: 200%;
+    }
+    100% {
+        background-position: -200%;
+    }
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:$colorblancopuro;
+    font-size: 1.2rem;
+  }
+  
+  #intro.top {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .main-contenido {
+    margin-top: 160px !important; 
+  }
+  
+  .contenedorprimario{
+    display: flex;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  /* Animation for scaling up */
+  .scale-up-center {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
+  .contenedorprimario img {
+    width: 80%;
+    height: 50vh;
+  }
+  
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: $colorblancopuro;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    text-shadow: 0px 4px 4px rgb(250, 246, 246); /* Ajusta los valores para el efecto deseado */
+  }
+  
+
+  .custom-carousel {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-control {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

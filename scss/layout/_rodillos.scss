@@ -1,0 +1,64 @@
+.card-containera {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Siempre 3 columnas */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    margin: 0 auto; /* Centrar el grid horizontalmente */
+  }
+  
+  .card {
+    border: 1px solid $colorblancopuro;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content p {
+    margin: 0 0 15px;
+  }
+  
+  .btn-consult {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $colorbotones; /* Color de WhatsApp */
+    color:$colorblancopuro;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-consult:hover {
+    background-color: $colorbotones;
+  }
+
+  
+  
+  /* Responsivo */ 
+  @media (max-width: 992px) {
+    .card-containera {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-containera {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+  }
+  
