@@ -376,3 +376,19 @@ a {
 
 
 
+
+
+
+
+@media (max-width: 490px) {
+    .tituloprimera {
+        font-size: 1.5rem; /* Adjust the font size as needed */
+    }
+    span {
+        font-size: 1.5rem ;
+    }
+    .containera{
+        display: flex;
+    justify-content: center;
+    }
+}
