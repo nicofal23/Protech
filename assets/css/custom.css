@@ -442,7 +442,11 @@ a {
 }
 
 
-
+.titulocategory{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
 
 
 li a{
