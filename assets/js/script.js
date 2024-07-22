@@ -1,18 +1,26 @@
 // Get modals and elements
 const modal1 = document.getElementById('productModal1');
 const modal2 = document.getElementById('productModal2');
+const modal3 = document.getElementById('productModal3');
 const openModalBtn1 = document.getElementById('openModalBtn1');
 const openModalBtn2 = document.getElementById('openModalBtn2');
+const openModalBtn3 = document.getElementById('openModalBtn3');
 const closeButtons1 = modal1.querySelectorAll('.close');
 const closeButtons2 = modal2.querySelectorAll('.close');
+const closeButtons3 = modal3.querySelectorAll('.close');
 const prevButtons1 = modal1.querySelectorAll('.carousel-control.prev');
 const nextButtons1 = modal1.querySelectorAll('.carousel-control.next');
 const prevButtons2 = modal2.querySelectorAll('.carousel-control.prev');
 const nextButtons2 = modal2.querySelectorAll('.carousel-control.next');
+const prevButtons3 = modal3.querySelectorAll('.carousel-control.prev');
+const nextButtons3 = modal3.querySelectorAll('.carousel-control.next');
 const carouselImages1 = modal1.querySelector('.carousel-images');
 const carouselImages2 = modal2.querySelector('.carousel-images');
+const carouselImages3 = modal3.querySelector('.carousel-images');
 let index1 = 0;
 let index2 = 0;
+let index3 = 0;
+
 
 // Open modal 1
 openModalBtn1.onclick = function() {
@@ -38,12 +46,27 @@ closeButtons2.forEach(button => {
     };
 });
 
+// Open modal 3
+openModalBtn3.onclick = function() {
+    modal3.style.display = 'block';
+};
+
+// Close modal 3
+closeButtons3.forEach(button => {
+    button.onclick = function() {
+        modal3.style.display = 'none';
+    };
+});
+
+
 // Close modal if user clicks outside of modal content
 window.onclick = function(event) {
     if (event.target === modal1) {
         modal1.style.display = 'none';
     } else if (event.target === modal2) {
         modal2.style.display = 'none';
+    } else if (event.target === modal3) {
+        modal3.style.display = 'none';
     }
 };
 
@@ -98,3 +121,30 @@ prevButtons2.forEach(button => {
 
 // Initialize the carousel for modal 2
 showImage2(index2);
+
+
+// Carousel functionality for modal 1
+function showImage3(index) {
+    const images = carouselImages3.children;
+    if (index >= images.length) index = 0;
+    if (index < 0) index = images.length - 1;
+    const offset = -index * 100;
+    carouselImages3.style.transform = `translateX(${offset}%)`;
+}
+
+nextButtons3.forEach(button => {
+    button.onclick = function() {
+        index3++;
+        showImage3(index3);
+    };
+});
+
+prevButtons3.forEach(button => {
+    button.onclick = function() {
+        index3--;
+        showImage3(index3);
+    };
+});
+
+// Initialize the carousel for modal 1
+showImage3(index3);
