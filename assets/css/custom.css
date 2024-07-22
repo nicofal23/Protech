@@ -445,7 +445,10 @@ a {
 
 
 
-
+li a{
+    font-family: 'MiFuente', sans-serif;
+    color: white;
+}
 
 @media (max-width: 991px) {
     .imagenLogo {
