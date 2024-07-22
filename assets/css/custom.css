@@ -21,7 +21,7 @@ Custom Css
   }
   .box {
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
   }
 
@@ -420,10 +420,26 @@ a {
 
 
 
+.tituloprimera, .box h2 {
+    font-style: italic; /* Aplica cursiva al texto */
+    font-size: 24px; /* Tamaño de fuente ajustable según tus necesidades */
+    line-height: 1.2; /* Altura de línea para separación entre líneas */
+    margin: 0; /* Elimina márgenes para un mejor posicionamiento */
+    padding: 10px;
+}
+
+.box h2 {
+    font-style: italic; /* Aplica cursiva al texto dentro de h2 */
+    margin-top: 0; /* Elimina el margen superior para pegar el texto inferior */
+    position: absolute;
+    bottom: 24%;
+}
 
 
 
-
+.imagenLogo {
+    width: 50%;
+}
 
 
 
