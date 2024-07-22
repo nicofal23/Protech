@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
     <!-- Start Top Nav -->
@@ -172,6 +173,7 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -183,17 +185,17 @@
             // Initialize emailjs with your user ID
             emailjs.init('8x6BkW-564iZdIkR5');
         })();
-
+    
         // Add event listener to the contact form
         document.getElementById('contact_form').addEventListener('submit', function(event) {
             event.preventDefault();
-
+    
             // Collect the form data
             var name = document.getElementById('nombre').value;
             var email = document.getElementById('telefono').value;
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
-
+    
             // Create the email params
             var params = {
                 name: name,
@@ -201,19 +203,30 @@
                 subject: subject,
                 message: message
             };
-
+    
             // Send the email using emailjs
-            emailjs.send('service_a39bl8f', 'template_6h8ehdl', params)
+            emailjs.send('service_eureybs', 'template_7wfbxfs', params)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert('Mensaje enviado con éxito.');
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Mensaje enviado!',
+                        text: 'Tu mensaje ha sido enviado con éxito.',
+                        confirmButtonText: 'Aceptar'
+                    });
                     // Reset the form
                     document.getElementById('contact_form').reset();
                 }, function(error) {
                     console.log('FAILED...', error);
-                    alert('Error al enviar el mensaje.');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',
+                        confirmButtonText: 'Aceptar'
+                    });
                 });
         });
     </script>
+    
 </body>
 </html>
