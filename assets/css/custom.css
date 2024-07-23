@@ -454,6 +454,39 @@ li a{
     color: white;
 }
 
+
+.tituloBanner{
+    color: black;
+    margin-top: 30px;
+    font-size: 2.875rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 991px) {
     .imagenLogo {
         width: 80%;
