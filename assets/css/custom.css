@@ -478,7 +478,9 @@ li a{
 
 
 
-
+.tituloBannerContainer{
+    padding: 10px;
+}
 
 
 
@@ -539,6 +541,12 @@ li a{
     }
     .imagenshop img {
         width: 90%;
+    }
+    .tituloBanner{
+        font-size: 1.875rem;
+    }
+    .imagenLogo {
+        width: 70%;
     }
 }
 
