@@ -21,8 +21,8 @@ Custom Css
   }
   .box {
     display: flex;
-    align-items: start;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
   }
 
   .box h1 a{
@@ -455,6 +455,7 @@ li a{
 }
 
 
+
 .tituloBanner{
     color: black;
     margin-top: 30px;
@@ -462,8 +463,18 @@ li a{
     text-align: center;
 }
 
+.remeralogo{
+    width: 30%;
+}
 
+.tituloFoto{
+  max-width: 100% !important;
+}
 
+.Contenedortitulo{
+    margin: 0 !important;
+    max-width: 100% !important;
+}
 
 
 
