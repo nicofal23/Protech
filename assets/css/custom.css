@@ -610,7 +610,9 @@ body {
 
 
 
-
+input,textarea,h1,a {
+    font-family: "mifuente" !important;
+}
 
 
 
@@ -745,6 +747,40 @@ body {
     .imagenLogo {
         width: 70%;
     }
+}
+
+/* Estilo para el contenedor en pantallas con un ancho de 562px o menos */
+@media (max-width: 562px) {
+    .parallax {
+        background-attachment: scroll; /* Cambia el efecto a imagen fija en dispositivos más pequeños */
+        background-position: center;
+        background-size: cover;
+        height: 300px; /* Ajusta la altura del contenedor si es necesario */
+    }
+}
+
+/* Ajustes adicionales para el contenedor */
+.container-fluid.bg-light.py-5 {
+    padding-top: 0; /* Opcional: ajusta el relleno superior si es necesario */
+    padding-bottom: 0; /* Opcional: ajusta el relleno inferior si es necesario */
+}
+
+/* Estilo de la base del contenedor */
+.base {
+    background-color: #000000b8;
+    padding: 20px;
+    flex-direction: column;
+    display: flex; /* Alinea el contenido del círculo en el centro */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo del texto */
+.contacto, .textoContacto {
+    color: white;
+
 }
 
 

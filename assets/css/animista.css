@@ -68,6 +68,10 @@
             animation: scale-up-hor-center 2s ease-out;
 }
 
+label {
+  color: white;
+  font-family: "mifuente";
+}
 
 /*Carrousel*/
 
