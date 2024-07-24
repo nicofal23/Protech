@@ -593,6 +593,7 @@ li a{
 .base {
     background-color: #000000b8;
     padding: 20px;
+    width: 60% !important;
 }
 
 .contacto {
