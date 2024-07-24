@@ -2,6 +2,11 @@
 Custom Css
 */
 
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../assets/webfonts/SerpentineDBol.ttf') format('truetype');
+}
+
 
 .containera {
     display: flex;
@@ -35,10 +40,6 @@ Custom Css
     font-size: 1.2rem; /* Ajusta el tamaño según tus necesidades */
   }
 
-  @font-face {
-    font-family: 'MiFuente';
-    src: url('../../assets/webfonts/SerpentineDBol.ttf') format('truetype');
-}
 
 h1 {
     font-family: 'MiFuente', sans-serif;
@@ -388,6 +389,7 @@ a {
 }
 .imagenshop img {
     width: 30%;
+    height: 70%;
 }
 .card-title{
     color: black;
@@ -545,6 +547,7 @@ li a{
     display: flex;
     flex-direction: row;
     height: 100%;
+    align-items: center;
 }
 
 .card-img {
@@ -572,9 +575,37 @@ li a{
 
 
 
+.parallax {
+    background-image: url('../img/STAND.jpg'); /* Cambia esta URL a la ruta de tu imagen */
+    background-attachment: fixed; /* Fija la imagen para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; /* Ajusta la altura del contenedor según sea necesario */
+    position: relative;
+    overflow: hidden;
+}
+
+.container-fluid.bg-light.py-5 {
+    padding-top: 0; /* Opcional: ajusta el relleno superior si es necesario */
+    padding-bottom: 0; /* Opcional: ajusta el relleno inferior si es necesario */
+}
+.base {
+    background-color: #000000b8;
+    padding: 20px;
+}
+
+.contacto {
+    color: white;
+}
+.textoContacto {
+    color: white;
+}
 
 
-
+body {
+    font-family: 'MiFuente', sans-serif !important;
+}
 
 
 
