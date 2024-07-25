@@ -581,7 +581,7 @@ li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px; /* Ajusta la altura del contenedor según sea necesario */
+    height: 50%;
     position: relative;
     overflow: hidden;
 }
