@@ -611,16 +611,30 @@ body {
 
 
 
-input,textarea,h1,a {
+input,textarea,h1,a,h3 {
     font-family: "mifuente" !important;
 }
 
 
+h3{
+    color: white;
+}
 
 
+.titulomercha {
+    display: flex;
+    justify-content: center;
+}
 
 
+.titulomercha h1 {
+    font-size: 70px;
+}
 
+.titulomercha h3 {
+    text-align: center;
+    padding: 21px;
+}
 
 
 
@@ -748,6 +762,13 @@ input,textarea,h1,a {
     .imagenLogo {
         width: 70%;
     }
+    .titulomercha h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size:30px;
+    }
+    
 }
 
 /* Estilo para el contenedor en pantallas con un ancho de 562px o menos */
@@ -758,6 +779,13 @@ input,textarea,h1,a {
         background-size: cover;
         height: 300px; /* Ajusta la altura del contenedor si es necesario */
     }
+    .titulomercha h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size:16px;
+    }
+    
 }
 
 /* Ajustes adicionales para el contenedor */
@@ -803,4 +831,11 @@ input,textarea,h1,a {
         justify-content: center;
         flex-direction: column;
     }
+    .titulomercha h1 {
+        font-size:30px;
+    }
+    h3 {
+        font-size:16px;
+    }
+    
 }
