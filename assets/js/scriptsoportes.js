@@ -8,6 +8,7 @@ const modal6 = document.getElementById('productModal6');
 const modal7 = document.getElementById('productModal7');
 const modal8 = document.getElementById('productModal8');
 const modal9 = document.getElementById('productModal9');
+const modal10 = document.getElementById('productModal10');
 
 
 
@@ -20,6 +21,7 @@ const openModalBtn6 = document.getElementById('openModalBtn6');
 const openModalBtn7 = document.getElementById('openModalBtn7');
 const openModalBtn8 = document.getElementById('openModalBtn8');
 const openModalBtn9 = document.getElementById('openModalBtn9');
+const openModalBtn10 = document.getElementById('openModalBtn10');
 
 const closeButtons1 = modal1.querySelectorAll('.close');
 const closeButtons2 = modal2.querySelectorAll('.close');
@@ -30,6 +32,7 @@ const closeButtons6 = modal6.querySelectorAll('.close');
 const closeButtons7 = modal7.querySelectorAll('.close');
 const closeButtons8 = modal8.querySelectorAll('.close');
 const closeButtons9 = modal9.querySelectorAll('.close');
+const closeButtons10 = modal10.querySelectorAll('.close');
 
 
 const prevButtons1 = modal1.querySelectorAll('.carousel-control.prev');
@@ -50,6 +53,8 @@ const prevButtons8 = modal8.querySelectorAll('.carousel-control.prev');
 const nextButtons8 = modal8.querySelectorAll('.carousel-control.next');
 const prevButtons9 = modal9.querySelectorAll('.carousel-control.prev');
 const nextButtons9 = modal9.querySelectorAll('.carousel-control.next');
+const prevButtons10 = modal10.querySelectorAll('.carousel-control.prev');
+const nextButtons10 = modal10.querySelectorAll('.carousel-control.next');
 
 const carouselImages1 = modal1.querySelector('.carousel-images');
 const carouselImages2 = modal2.querySelector('.carousel-images');
@@ -60,6 +65,7 @@ const carouselImages6 = modal6.querySelector('.carousel-images');
 const carouselImages7 = modal7.querySelector('.carousel-images');
 const carouselImages8 = modal8.querySelector('.carousel-images');
 const carouselImages9 = modal9.querySelector('.carousel-images');
+const carouselImages10 = modal10.querySelector('.carousel-images');
 
 let index1 = 0;
 let index2 = 0;
@@ -70,6 +76,7 @@ let index6 = 0;
 let index7 = 0;
 let index8 = 0;
 let index9 = 0;
+let index10 = 0;
 
 
 // Open modals
@@ -82,6 +89,7 @@ openModalBtn6.onclick = function() { modal6.style.display = 'block'; };
 openModalBtn7.onclick = function() { modal7.style.display = 'block'; };
 openModalBtn8.onclick = function() { modal8.style.display = 'block'; };
 openModalBtn9.onclick = function() { modal9.style.display = 'block'; };
+openModalBtn10.onclick = function() { modal10.style.display = 'block'; };
 
 
 // Close modals
@@ -94,6 +102,7 @@ closeButtons6.forEach(button => { button.onclick = function() { modal6.style.dis
 closeButtons7.forEach(button => { button.onclick = function() { modal7.style.display = 'none'; }; });
 closeButtons8.forEach(button => { button.onclick = function() { modal8.style.display = 'none'; }; });
 closeButtons9.forEach(button => { button.onclick = function() { modal9.style.display = 'none'; }; });
+closeButtons10.forEach(button => { button.onclick = function() { modal10.style.display = 'none'; }; });
 
 // Close modals if user clicks outside
 window.onclick = function(event) {
@@ -106,6 +115,7 @@ window.onclick = function(event) {
     if (event.target === modal7) modal7.style.display = 'none';
     if (event.target === modal8) modal8.style.display = 'none';
     if (event.target === modal9) modal9.style.display = 'none';
+    if (event.target === modal10) modal10.style.display = 'none';
 };
 
 // Carousel functionality
@@ -146,6 +156,7 @@ initializeCarousel(prevButtons6, nextButtons6, carouselImages6, index6);
 initializeCarousel(prevButtons7, nextButtons7, carouselImages7, index7);
 initializeCarousel(prevButtons8, nextButtons8, carouselImages8, index8);
 initializeCarousel(prevButtons9, nextButtons9, carouselImages9, index9);
+initializeCarousel(prevButtons10, nextButtons10, carouselImages10, index9);
 
 // <!-- Product Cards 4 -->
 // <div class="col-md-4 mb-4">
