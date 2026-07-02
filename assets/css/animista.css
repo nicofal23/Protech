@@ -498,3 +498,63 @@ label {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
   }
 }
+
+
+
+/* Fondo del header completo */
+.header-fondo{
+    background-image:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("../img/FONDO.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hace transparentes las barras */
+#templatemo_nav_top{
+    background: transparent !important;
+}
+
+.navbar{
+    background: transparent !important;
+}
+
+/* Mantiene el texto blanco */
+#templatemo_nav_top a,
+#templatemo_nav_top i{
+    color:#fff !important;
+}
+
+/* Links del menú */
+.navbar .nav-link{
+    color:#fff !important;
+    font-weight:600;
+}
+
+/* Hover del menú */
+.navbar .nav-link:hover{
+    color:#ffcc00 !important;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    background:rgba(20,20,20,.95);
+}
+
+.dropdown-item{
+    color:#fff;
+}
+
+.dropdown-item:hover{
+    background:#333;
+    color:#ffcc00;
+}
+
+.tienda {
+  text-align: center;
+}
+.tienda img{
+    margin: 0 auto;
+}

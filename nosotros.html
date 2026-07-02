@@ -51,7 +51,6 @@
 
 
         <!-- Header -->
-                <!-- Header -->
         <nav class="navbar navbar-expand-lg navbar-light shadow">
 
             <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
@@ -146,46 +145,84 @@
     <!-- Close Header -->
 
     <!-- Start Content Page -->
-    <div class="container-fluid bg-light py-5 parallax">
-        <div class="col-md-6 m-auto text-center base">
-            <h1 class="card-title contacto">Contacto:</h1>
-            <p class="descripcionshop textoContacto">
-                Muchas veces no podemos atender los llamados telefónicos debido a la gran cantidad de consultas que recibimos.<br><br>eso, te pedimos que nos envíes un WhatsApp con todas tus consultas para que podamos responderte correctamente.<br><br>Si tienes alguna duda, consulta o sugerencia, o si no encuentras respuesta en nuestros otros canales, puedes escribirnos en el siguiente formulario de contacto.
-            </p>
-        </div>
-    </div>
-    
+    <main>
 
-    <!-- Start Contact -->
-    <div class="container py-5 slide-right">
-        <div class="row py-5 p-3">
-            <form class="col-md-9 m-auto" method="post" role="form" id="contact_form">
-                <div class="row">
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Nombre</label>
-                        <input type="text" class="form-control mt-1" id="nombre" name="name" placeholder="Nombre" required>
-                    </div>
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
-                        <input type="email" class="form-control mt-1" id="telefono" name="email" placeholder="Email" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="inputsubject">Asunto</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto" required>
-                </div>
-                <div class="mb-3">
-                    <label for="inputmessage">Mensaje</label>
-                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje" rows="8" required></textarea>
-                </div>
-                <div class="row">
-                    <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+    <div style="
+        max-width:1100px;
+        margin:60px auto;
+        padding:50px;
+        background:rgba(255,255,255,.95);
+        border-radius:20px;
+        box-shadow:0 15px 35px rgba(0,0,0,.25);
+        color:#111;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height:1.9;
+        text-align:center;
+        animation:fadeIn 1.2s ease-out;
+    ">
+
+        <h1 style="
+            font-size:42px;
+            font-weight:700;
+            margin-bottom:35px;
+            letter-spacing:2px;
+            color:#005AA4;
+        ">
+            PROTECH ARGENTINA
+        </h1>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            Desde el año <strong>2018</strong>, <strong>PROTECH ARGENTINA</strong> trabaja con un objetivo claro: desarrollar productos de excelencia para el ciclismo, combinando innovación, funcionalidad y la calidad que caracteriza a la industria nacional.
+        </p>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            Nacida en la ciudad de <strong>Rosario, Santa Fe</strong>, la empresa se ha consolidado como un referente en la fabricación de <strong>soportes para bicicletas, rodillos de entrenamiento y accesorios</strong>, ofreciendo soluciones diseñadas para satisfacer las necesidades tanto de ciclistas aficionados como de deportistas de alto rendimiento.
+        </p>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            A lo largo de estos años, nuestro crecimiento ha sido impulsado por el compromiso con la mejora continua, la utilización de materiales de primera calidad y un proceso de fabricación cuidadosamente controlado. Cada producto PROTECH es diseñado pensando en la seguridad, la durabilidad y la practicidad, garantizando un excelente desempeño y una experiencia confiable para cada usuario.
+        </p>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            Hoy distribuimos nuestros productos a todo el territorio argentino, llegando a miles de clientes mediante una amplia red comercial y envíos a cada rincón del país. La confianza de quienes eligen nuestra marca es el motor que nos impulsa a seguir innovando y desarrollando nuevas soluciones para el mundo del ciclismo.
+        </p>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            Además de nuestra actividad industrial, estamos presentes en los principales eventos y competencias de ciclismo de Argentina, acompañando a clubes, equipos, organizadores y deportistas. Creemos firmemente en el crecimiento de este deporte y trabajamos para fortalecer la comunidad ciclista con productos que respondan a las exigencias del entrenamiento y la competición.
+        </p>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
+            En PROTECH ARGENTINA apostamos al desarrollo de la industria nacional, invirtiendo en tecnología, diseño y producción local. Nuestro compromiso es seguir fabricando productos de alto nivel, con atención personalizada y un servicio que prioriza la satisfacción de cada cliente.
+        </p>
+
+        <hr style="margin:40px auto; width:120px; border:2px solid #0d6efd;">
+
+        <p style="
+            font-size:22px;
+            font-weight:bold;
+            color:#0d6efd;
+            margin-bottom:0;
+            color:#005AA4;
+        ">
+            Más que fabricar soportes y rodillos para bicicletas, construimos confianza, impulsamos el deporte y acompañamos a miles de ciclistas en cada kilómetro recorrido. Ese es nuestro desafío diario y la razón por la que seguimos creciendo, innovando y llevando la calidad argentina a todo el país.
+        </p>
+
     </div>
+
+</main>
+
+<style>
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
     <!-- End Contact -->
 
     <!-- Div donde se insertará el formulario dinámicamente -->
