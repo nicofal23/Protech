@@ -1,0 +1,695 @@
+/* =========================================================
+   PROTECH ARGENTINA - Estilos propios
+   ---------------------------------------------------------
+   1. Fuente
+   2. Base y tipografía
+   3. Header (barra superior, logo, menú)
+   4. Botón flotante de WhatsApp
+   5. Inicio (carrusel y categorías)
+   6. Listado de productos (tarjetas)
+   7. Modal de producto y carrusel de fotos
+   8. Contacto
+   9. Nosotros
+   10. Puntos de venta
+   11. R2R (Ready to Ride)
+   12. Responsive
+   ========================================================= */
+
+
+/* ---------- 1. Fuente ---------- */
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../webfonts/SerpentineDBol.ttf') format('truetype');
+}
+
+
+/* ---------- 2. Base y tipografía ---------- */
+
+body {
+    background-color: black !important;
+    font-family: 'MiFuente', sans-serif !important;
+}
+
+h1, h2, h5, p {
+    color: white;
+    font-family: 'MiFuente', sans-serif;
+}
+
+h3 {
+    color: white;
+}
+
+input, textarea, h1, a, h3 {
+    font-family: "mifuente" !important;
+}
+
+label {
+    color: white;
+    font-family: "mifuente";
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    font-family: 'MiFuente', sans-serif;
+    color: white;
+}
+
+.h4 {
+    font-size: 25px !important;
+}
+
+
+/* ---------- 3. Header ---------- */
+
+/* Fondo del header completo (páginas con el header nuevo) */
+.header-fondo {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+        url("../img/general/FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Barras transparentes */
+#templatemo_nav_top,
+.navbar {
+    background: transparent !important;
+}
+
+#templatemo_nav_top a,
+#templatemo_nav_top i {
+    color: #fff !important;
+}
+
+/* Contenedor del logo */
+.Contenedortitulo {
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.containera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tituloprimera {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 10px;
+}
+
+.imagenLogo {
+    width: 80%;
+}
+
+.remeralogo {
+    width: 30%;
+}
+
+/* Menú */
+.nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.dropdown-menu {
+    background: rgba(20, 20, 20, .95);
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background: #333;
+    color: #ffcc00;
+}
+
+/* Botón "Compras Online" (header nuevo) */
+.tienda {
+    text-align: center;
+}
+
+.tienda a {
+    margin-top: 10px;
+    display: block;
+}
+
+.tienda img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Banner R2R dentro del menú (header clásico) */
+.nav-banner {
+    margin-top: 10px;
+    display: block;
+}
+
+.nav-banner img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/* ---------- 4. Botón flotante de WhatsApp ---------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+/* ---------- 5. Inicio ---------- */
+
+.tituloBannerContainer {
+    padding: 10px;
+}
+
+.tituloBanner {
+    color: black;
+    margin-top: 30px;
+    font-size: 2.875rem;
+    text-align: center;
+}
+
+.textoCarusel {
+    color: black;
+}
+
+
+/* ---------- 6. Listado de productos ---------- */
+
+.titulocategory {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.mb-4 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagenshop img {
+    width: 50%;
+    height: 50%;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    color: black;
+}
+
+.descripcionshop {
+    color: black;
+    font-size: 18px !important;
+}
+
+.conjunto {
+    display: flex;
+    gap: 15px;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+
+/* ---------- 7. Modal de producto y carrusel de fotos ---------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #888;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.whatsapp-button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.whatsapp-button1 i {
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.linkwsp {
+    color: white;
+}
+
+
+/* ---------- 8. Contacto ---------- */
+
+.parallax {
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+    background-image: url('../img/general/STAND.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid.bg-light.py-5 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60% !important;
+    height: auto;
+    padding: 20px;
+    background-color: #000000b8;
+}
+
+.contacto,
+.textoContacto {
+    color: white;
+}
+
+
+/* ---------- 9. Nosotros ---------- */
+
+.nosotros-caja {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, .95);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.nosotros-caja h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+    color: #005AA4;
+}
+
+.nosotros-caja p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #005AA4;
+}
+
+.nosotros-caja hr {
+    margin: 40px auto;
+    width: 120px;
+    border: 2px solid #0d6efd;
+}
+
+.nosotros-caja .nosotros-cierre {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+/* ---------- 10. Puntos de venta ---------- */
+
+.titulo-seccion {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-seccion h1 {
+    font-size: 70px;
+}
+
+.titulo-seccion h3 {
+    text-align: center;
+    padding: 21px;
+}
+
+.imagen-seccion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-seccion img {
+    width: 90%;
+    margin: 30px;
+}
+
+
+/* ---------- 11. R2R (Ready to Ride) ---------- */
+
+.r2r-espacio {
+    height: 43px;
+}
+
+.r2r-slide-titulo {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.r2r-slide-titulo h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.r2r-slide-texto {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.r2r-slide-texto p {
+    color: black;
+}
+
+.r2r-ficha {
+    display: flex;
+    justify-content: center;
+}
+
+.r2r-ficha img {
+    display: block;
+    margin: 0 auto;
+}
+
+.boton-whatsapp-grande {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.boton-whatsapp-grande i {
+    margin-right: 10px;
+}
+
+
+/* ---------- 12. Responsive ---------- */
+
+@media (max-width: 991px) {
+    .imagenLogo {
+        width: 80%;
+    }
+
+    .mb-4 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .box {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .conjunto {
+        flex-direction: column;
+    }
+
+    .container,
+    .container-sm {
+        max-width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-unstyled {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containera {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .imagenshop img {
+        width: 90%;
+    }
+
+    .tituloBanner {
+        font-size: 1.875rem;
+    }
+
+    .imagenLogo {
+        width: 70%;
+    }
+
+    .titulo-seccion h1 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 562px) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .titulo-seccion h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 490px) {
+    .tituloprimera {
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    .containera {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-unstyled {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titulo-seccion h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

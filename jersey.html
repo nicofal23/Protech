@@ -1,335 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>Protech - Argentina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protech Argentina - Jersey</title>
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="assets/img/general/apple-icon.png">
 
+    <!-- Librerías -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/animista.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<!--
-    
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
--->
+    <!-- Estilos del sitio -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/animaciones.css">
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">rodillos.protech.ros@gmail.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3416899880">3416899880</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://web.facebook.com/ProTech.Argentina.ar" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/protech.argentina" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
+    <!-- Header (se arma en assets/js/layout.js) -->
+    <div data-incluir="header" data-variante="clasico" data-logo="./assets/img/general/inicio.png"></div>
 
+    <!-- Botón flotante de WhatsApp -->
+    <div data-incluir="whatsapp" data-link="https://wa.link/4v1ejp"></div>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
-            <div class="containera" id="intro">
-                <div class="box">
-                    <img src="./assets/img/inicio.png" alt="imagenInicio" class="remeralogo tituloprimera">
-                    <img src="./assets/img/logo.png" alt="imagenLogo" class="imagenLogo tituloprimera">
+    <!-- Contenido -->
+    <div class="container py-5">
+        <div class="row">
+
+            <!-- Categorías -->
+            <div class="col-lg-3 slide-right">
+                <h1 class="h2 pb-4">Categorías</h1>
+                <ul class="list-unstyled">
+                    <li class="pb-3">
+                        <a class="text-decoration-none h3 links" href="rodillos.html">Rodillos</a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="text-decoration-none h3 links" href="jersey.html">Jersey</a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="text-decoration-none h3 links" href="soportes.html">Soportes</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Productos -->
+            <div class="col-lg-9">
+                <h2 class="titulocategory">JERSEY:</h2>
+                <div class="row">
+                    <!-- REMERA URBANA -->
+                    <div class="col-md-4 mb-4 slide-left">
+                        <div class="card product-card rounded-0 imagenshop">
+                            <img class="card-img-top img-fluid" src="assets/img/jersey/REMERASURBANAS.jpg" alt="REMERA URBANA">
+                            <div class="card-body">
+                                <p class="h4 card-title text-decoration-none">REMERA URBANA</p>
+                                <p class="descripcionshop">Remera urbana cuello redondo manga recta. Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
+                                <div class="d-flex justify-content-center mt-3 conjunto">
+                                    <button class="btn btn-success">
+                                        <a href="https://wa.link/nf8l08" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                    </button>
+                                    <button class="btn btn-success" data-abrir-modal="modal-remera-urbana">
+                                        <i class="far fa-eye"></i> Ver más
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JERSEY CIERRE CORTO -->
+                    <div class="col-md-4 mb-4 slide-left">
+                        <div class="card product-card rounded-0 imagenshop">
+                            <img class="card-img-top img-fluid" src="assets/img/jersey/jerseycierrecorto.jpg" alt="JERSEY CIERRE CORTO">
+                            <div class="card-body">
+                                <p class="h4 card-title text-decoration-none">JERSEY CIERRE CORTO</p>
+                                <p class="descripcionshop">Jersey de ciclismo con cierre corto (18cm) y manga ranglan. <br> Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
+                                <div class="d-flex justify-content-center mt-3 conjunto">
+                                    <button class="btn btn-success">
+                                        <a href="https://wa.link/xd6hf5" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                    </button>
+                                    <button class="btn btn-success" data-abrir-modal="modal-cierre-corto">
+                                        <i class="far fa-eye"></i> Ver más
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JERSEY CIERRE LARGO -->
+                    <div class="col-md-4 mb-4 slide-left">
+                        <div class="card product-card rounded-0 imagenshop">
+                            <img class="card-img-top img-fluid" src="assets/img/jersey/jerseycierrelargo.jpg" alt="JERSEY CIERRE LARGO">
+                            <div class="card-body">
+                                <p class="h4 card-title text-decoration-none">JERSEY CIERRE LARGO</p>
+                                <p class="descripcionshop">Jersey de ciclismo con cierre completo, manga ranglan. <br> Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
+                                <div class="d-flex justify-content-center mt-3 conjunto">
+                                    <button class="btn btn-success">
+                                        <a href="https://wa.link/hpgld3" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                    </button>
+                                    <button class="btn btn-success" data-abrir-modal="modal-cierre-largo">
+                                        <i class="far fa-eye"></i> Ver más
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-    
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between p-1" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PRODUCTOS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="rodillos.html">RODILLOS</a></li>
-                                <li><a class="dropdown-item" href="soportes.html">SOPORTES</a></li>
-                                <li><a class="dropdown-item" href="jersey.html">JERSEY</a></li>
-                                <li><a class="dropdown-item" href="merchandasing.html">MERCHANDISING</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="puntoventa.html">PUNTOS DE VENTA</a>
-                        </li>
-                        <li>
-                            <!-- Imagen pequeña dentro del nav -->
-        <a href="r2r.html" style="margin-top: 10px; display: block;">
-            <img src="./assets/img/nuevo_banner.jpg" alt="Ir a Nuevo" style="width: 120px; height: auto; display: block;">
-        </a>
-                        </li>
-                    </ul>
+
+            <!-- ===== Modales (se abren con "Ver más") ===== -->
+            <!-- Modal: REMERA URBANA -->
+            <div id="modal-remera-urbana" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/jersey/REMERASURBANAS.jpg" alt="REMERA URBANA - foto 1">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
+                    </div>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/nf8l08" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                
             </div>
+
+            <!-- Modal: JERSEY CIERRE CORTO -->
+            <div id="modal-cierre-corto" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/jersey/jersey-argentina.jpg" alt="JERSEY CIERRE CORTO - foto 1">
+                            <img src="assets/img/jersey/jersey-azul.jpg" alt="JERSEY CIERRE CORTO - foto 2">
+                            <img src="assets/img/jersey/jersey-carbon.jpg" alt="JERSEY CIERRE CORTO - foto 3">
+                            <img src="assets/img/jersey/jersey-giant.jpg" alt="JERSEY CIERRE CORTO - foto 4">
+                            <img src="assets/img/jersey/jersey-kamikazes.jpg" alt="JERSEY CIERRE CORTO - foto 5">
+                            <img src="assets/img/jersey/jersey-moji.jpg" alt="JERSEY CIERRE CORTO - foto 6">
+                            <img src="assets/img/jersey/jersey-negroverde.jpg" alt="JERSEY CIERRE CORTO - foto 7">
+                            <img src="assets/img/jersey/jersey-pelotonbike.jpg" alt="JERSEY CIERRE CORTO - foto 8">
+                            <img src="assets/img/jersey/jersey-vialtech.jpg" alt="JERSEY CIERRE CORTO - foto 9">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
+                    </div>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/xd6hf5" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal: JERSEY CIERRE LARGO -->
+            <div id="modal-cierre-largo" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/jersey/jersey-argentina.jpg" alt="JERSEY CIERRE LARGO - foto 1">
+                            <img src="assets/img/jersey/jersey-azul.jpg" alt="JERSEY CIERRE LARGO - foto 2">
+                            <img src="assets/img/jersey/jersey-carbon.jpg" alt="JERSEY CIERRE LARGO - foto 3">
+                            <img src="assets/img/jersey/jersey-giant.jpg" alt="JERSEY CIERRE LARGO - foto 4">
+                            <img src="assets/img/jersey/jersey-kamikazes.jpg" alt="JERSEY CIERRE LARGO - foto 5">
+                            <img src="assets/img/jersey/jersey-moji.jpg" alt="JERSEY CIERRE LARGO - foto 6">
+                            <img src="assets/img/jersey/jersey-negroverde.jpg" alt="JERSEY CIERRE LARGO - foto 7">
+                            <img src="assets/img/jersey/jersey-pelotonbike.jpg" alt="JERSEY CIERRE LARGO - foto 8">
+                            <img src="assets/img/jersey/jersey-vialtech.jpg" alt="JERSEY CIERRE LARGO - foto 9">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
+                    </div>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/hpgld3" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
+                </div>
+            </div>
+
         </div>
-    </nav>
-    
-    <!-- Close Header -->
-    <!--logo de whatsapp-->
-    <a href="https://wa.link/4v1ejp" class="whatsapp-button" target="_blank">
-        <img src="./assets/img/whatsapp.png" alt="WhatsApp">
-    </a>    
-        </div>
-    </nav>
-    <!-- Close Header -->
     </div>
 
+    <!-- Footer (se arma en assets/js/layout.js) -->
+    <div data-incluir="footer"></div>
 
-
-    <!-- Start Content -->
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-3 slide-right">
-            <h1 class="h2 pb-4">Categorías</h1>
-            <ul class="list-unstyled">
-                <li class="pb-3">
-                    <a class="text-decoration-none h3 links" href="rodillos.html">Rodillos</a>
-                </li>
-                <li class="pb-3">
-                    <a class="text-decoration-none h3 links" href="jersey.html">Jersey</a>
-                </li>
-                <li class="pb-3">
-                    <a class="text-decoration-none h3 links" href="merchandasing.html">Merchandising</a>
-                </li>
-                <li class="pb-3">
-                    <a class="text-decoration-none h3 links" href="soportes.html">Soportes</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-lg-9">
-            <h2 class="titulocategory">JERSEY:</h2>
-            <div class="row">
-                <!-- Product Cards 1-->
-                <div class="col-md-4 mb-4 slide-left">
-                    <div class="card product-card rounded-0 imagenshop">
-                        <img class="card-img-top img-fluid " src="assets/img/jersey/REMERASURBANAS.jpg" alt="Product Image">
-                        <div class="card-body">
-                            <p href="#" class="h4 card-title text-decoration-none">REMERA URBANA</p>
-                            <p class="descripcionshop">Remera urbana cuello redondo manga recta. Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
-                            <div class="d-flex justify-content-center mt-3 conjunto">
-                                <button class="btn btn-success">
-                                    <a href="https://wa.link/nf8l08" target="_blank"><i class="fa-brands fa-whatsapp" ></i> Consultar</a>
-                                </button>
-                                <button class="btn btn-success" id="openModalBtn1">
-                                    <i class="far fa-eye"></i> Ver más
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <!--final producto-->
-                <!-- Repeat above block for each product 2-->
-    
-                <div class="col-md-4 mb-4 slide-left">
-                    <div class="card product-card rounded-0 imagenshop">
-                        <img class="card-img-top img-fluid" src="assets/img/jersey/jerseycierrecorto.jpg" alt="Product Image">
-                        <div class="card-body">
-                            <p href="#" class="h4 card-title text-decoration-none">JERSEY CIERRE CORTO</p>
-                            <p class="descripcionshop">Jersey de ciclismo con cierre corto (18cm) y manga ranglan. <br> Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
-                            <div class="d-flex justify-content-center mt-3 conjunto">
-                                <button class="btn btn-success">
-                                    <a href="https://wa.link/xd6hf5" target="_blank"><i class="fa-brands fa-whatsapp" ></i> Consultar</a>
-                                </button>
-                                <button class="btn btn-success" id="openModalBtn2">
-                                    <i class="far fa-eye"></i> Ver más
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <!--final producto-->
-
-                <!-- Repeat above block for each product  3-->
-    
-                <div class="col-md-4 mb-4 slide-left">
-                    <div class="card product-card rounded-0 imagenshop">
-                        <img class="card-img-top img-fluid" src="assets/img/jersey/jerseycierrelargo.jpg" alt="Product Image">
-                        <div class="card-body">
-                            <p href="#" class="h4 card-title text-decoration-none">JERSEY CIERRE LARGO</p>
-                            <p class="descripcionshop">Jersey de ciclismo con cierre completo, manga ranglan. <br> Full Print. <br> Tela importada de secado rápido. <br> Tratamiento UV. <br> Todos los talles disponibles.</p>
-                            <div class="d-flex justify-content-center mt-3 conjunto">
-                                <button class="btn btn-success">
-                                    <a href="https://wa.link/hpgld3" target="_blank"><i class="fa-brands fa-whatsapp" ></i> Consultar</a>
-                                </button>
-                                <button class="btn btn-success" id="openModalBtn3">
-                                    <i class="far fa-eye"></i> Ver más
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!--final producto-->
-                
-            </div>
-        </div>
-        <!-- Product Modal 1 -->
-        <div id="productModal1" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/jersey/REMERASURBANAS.jpg" alt="Image 1">
-                    </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
-                </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/nf8l08" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
-                </button>
-            </div>
-        </div>
-        <!--final modal-->
-        <!-- Product Modal 2 -->
-        <div id="productModal2" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/jersey/jersey-argentina.jpg" alt="Image 1">
-                        <img src="assets/img/jersey/jersey-azul.jpg" alt="Image 2">
-                        <img src="assets/img/jersey/jersey-carbon.jpg" alt="Image 3">
-                        <img src="assets/img/jersey/jersey-giant.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-kamikazes.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-moji.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-negroverde.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-pelotonbike.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-vialtech.jpg" alt="Image 4">
-                    </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
-                </div>
-                <h5>Another Product</h5>
-                <button id="addToCartBtn2" class="whatsapp-button1">
-                    <a href="https://wa.link/xd6hf5" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
-                </button>
-            </div>
-        </div>
-        <!--final modal-->
-        <!-- Product Modal 3 -->
-        <div id="productModal3" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/jersey/jersey-argentina.jpg" alt="Image 1">
-                        <img src="assets/img/jersey/jersey-azul.jpg" alt="Image 2">
-                        <img src="assets/img/jersey/jersey-carbon.jpg" alt="Image 3">
-                        <img src="assets/img/jersey/jersey-giant.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-kamikazes.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-moji.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-negroverde.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-pelotonbike.jpg" alt="Image 4">
-                        <img src="assets/img/jersey/jersey-vialtech.jpg" alt="Image 4">
-                    </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
-                </div>
-                <h5>Another Product</h5>
-                <button id="addToCartBtn2" class="whatsapp-button1">
-                    <a href="https://wa.link/hpgld3" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
-                </button>
-            </div>
-        </div>
-        <!--final modal-->
-    </div>
-</div>
-    <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Protech Argentina</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:3416899880">3416899880</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">rodillos.protech.ros@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://web.facebook.com/ProTech.Argentina.ar"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/protech.argentina"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2024 ProtechArgentina
-                            | Designed by <a rel="sponsored" href="https://www.digitalnest.com.ar/" target="_blank">DigitalNest</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Start Script -->
-    <script src="assets/js/animista.js"></script>
-    <script src="./assets/js/scriptjersey.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/animaciones.js"></script>
+    <script src="assets/js/productos.js"></script>
 </body>
 
 </html>

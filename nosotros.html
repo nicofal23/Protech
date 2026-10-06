@@ -1,327 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <title>ProtechArgentina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protech Argentina - Nosotros</title>
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="assets/img/general/apple-icon.png">
+
+    <!-- Librerías -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/animista.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Estilos del sitio -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/animaciones.css">
 </head>
+
 <body>
-    <header class="header-fondo">
+    <!-- Header (se arma en assets/js/layout.js) -->
+    <div data-incluir="header"></div>
 
-        <!-- Start Top Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top">
-            <div class="container text-light">
-                <div class="w-100 d-flex justify-content-between">
-                    <div>
-                        <i class="fa fa-envelope mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">
-                            rodillos.protech.ros@gmail.com
-                        </a>
+    <!-- Botón flotante de WhatsApp -->
+    <div data-incluir="whatsapp" data-link="https://wa.link/f7dyvu"></div>
 
-                        <i class="fa fa-phone mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3416899880">
-                            3416899880
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="text-light" href="https://web.facebook.com/ProTech.Argentina.ar" target="_blank" rel="sponsored">
-                            <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                        </a>
-
-                        <a class="text-light" href="https://www.instagram.com/protech.argentina" target="_blank">
-                            <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- End Top Nav -->
-
-
-        <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light shadow">
-
-            <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
-
-                <div class="containera" id="intro">
-                    <div class="box">
-                        <img src="./assets/img/LOGOPROTECH.png" alt="Logo" class="imagenLogo tituloprimera">
-                    </div>
-                </div>
-
-                <button class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#templatemo_main_nav">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between p-1"
-                    id="templatemo_main_nav">
-
-                    <div class="flex-fill">
-
-                        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">INICIO</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown">
-
-                                    PRODUCTOS
-
-                                </a>
-
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="rodillos.html">RODILLOS</a></li>
-                                    <li><a class="dropdown-item" href="soportes.html">SOPORTES</a></li>
-                                    <li><a class="dropdown-item" href="index.html">ACCESORIOS</a></li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">CONTACTO</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="puntoventa.html">PUNTOS DE VENTA</a>
-                            </li>
-
-                            <li class="tienda">
-                                <a href="https://protechargentina.mitiendanube.com/" style="margin-top:10px;display:block;">
-                                    <h3>Compras Online</h3>
-                                    <img src="./assets/img/CARRITO.png"
-                                        alt="Nuevo"
-                                        style="width:80px;height:auto;display:block;">
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </nav>
-        <!-- End Header -->
-
-    </header>
-        <!-- End Header -->
-
-    
-    <!-- Close Header -->
-    <!--logo de whatsapp-->
-    <a href="https://wa.link/f7dyvu" class="whatsapp-button" target="_blank">
-        <img src="./assets/img/whatsapp.png" alt="WhatsApp">
-    </a>    
-    <!-- Close Header -->
-
-    <!-- Start Content Page -->
     <main>
+        <div class="nosotros-caja">
+            <h1>PROTECH ARGENTINA</h1>
 
-    <div style="
-        max-width:1100px;
-        margin:60px auto;
-        padding:50px;
-        background:rgba(255,255,255,.95);
-        border-radius:20px;
-        box-shadow:0 15px 35px rgba(0,0,0,.25);
-        color:#111;
-        font-family:Arial, Helvetica, sans-serif;
-        line-height:1.9;
-        text-align:center;
-        animation:fadeIn 1.2s ease-out;
-    ">
+            <p>
+                Desde el año <strong>2018</strong>, <strong>PROTECH ARGENTINA</strong> trabaja con un objetivo claro: desarrollar productos de excelencia para el ciclismo, combinando innovación, funcionalidad y la calidad que caracteriza a la industria nacional.
+            </p>
 
-        <h1 style="
-            font-size:42px;
-            font-weight:700;
-            margin-bottom:35px;
-            letter-spacing:2px;
-            color:#005AA4;
-        ">
-            PROTECH ARGENTINA
-        </h1>
+            <p>
+                Nacida en la ciudad de <strong>Rosario, Santa Fe</strong>, la empresa se ha consolidado como un referente en la fabricación de <strong>soportes para bicicletas, rodillos de entrenamiento y accesorios</strong>, ofreciendo soluciones diseñadas para satisfacer las necesidades tanto de ciclistas aficionados como de deportistas de alto rendimiento.
+            </p>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            Desde el año <strong>2018</strong>, <strong>PROTECH ARGENTINA</strong> trabaja con un objetivo claro: desarrollar productos de excelencia para el ciclismo, combinando innovación, funcionalidad y la calidad que caracteriza a la industria nacional.
-        </p>
+            <p>
+                A lo largo de estos años, nuestro crecimiento ha sido impulsado por el compromiso con la mejora continua, la utilización de materiales de primera calidad y un proceso de fabricación cuidadosamente controlado. Cada producto PROTECH es diseñado pensando en la seguridad, la durabilidad y la practicidad, garantizando un excelente desempeño y una experiencia confiable para cada usuario.
+            </p>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            Nacida en la ciudad de <strong>Rosario, Santa Fe</strong>, la empresa se ha consolidado como un referente en la fabricación de <strong>soportes para bicicletas, rodillos de entrenamiento y accesorios</strong>, ofreciendo soluciones diseñadas para satisfacer las necesidades tanto de ciclistas aficionados como de deportistas de alto rendimiento.
-        </p>
+            <p>
+                Hoy distribuimos nuestros productos a todo el territorio argentino, llegando a miles de clientes mediante una amplia red comercial y envíos a cada rincón del país. La confianza de quienes eligen nuestra marca es el motor que nos impulsa a seguir innovando y desarrollando nuevas soluciones para el mundo del ciclismo.
+            </p>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            A lo largo de estos años, nuestro crecimiento ha sido impulsado por el compromiso con la mejora continua, la utilización de materiales de primera calidad y un proceso de fabricación cuidadosamente controlado. Cada producto PROTECH es diseñado pensando en la seguridad, la durabilidad y la practicidad, garantizando un excelente desempeño y una experiencia confiable para cada usuario.
-        </p>
+            <p>
+                Además de nuestra actividad industrial, estamos presentes en los principales eventos y competencias de ciclismo de Argentina, acompañando a clubes, equipos, organizadores y deportistas. Creemos firmemente en el crecimiento de este deporte y trabajamos para fortalecer la comunidad ciclista con productos que respondan a las exigencias del entrenamiento y la competición.
+            </p>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            Hoy distribuimos nuestros productos a todo el territorio argentino, llegando a miles de clientes mediante una amplia red comercial y envíos a cada rincón del país. La confianza de quienes eligen nuestra marca es el motor que nos impulsa a seguir innovando y desarrollando nuevas soluciones para el mundo del ciclismo.
-        </p>
+            <p>
+                En PROTECH ARGENTINA apostamos al desarrollo de la industria nacional, invirtiendo en tecnología, diseño y producción local. Nuestro compromiso es seguir fabricando productos de alto nivel, con atención personalizada y un servicio que prioriza la satisfacción de cada cliente.
+            </p>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            Además de nuestra actividad industrial, estamos presentes en los principales eventos y competencias de ciclismo de Argentina, acompañando a clubes, equipos, organizadores y deportistas. Creemos firmemente en el crecimiento de este deporte y trabajamos para fortalecer la comunidad ciclista con productos que respondan a las exigencias del entrenamiento y la competición.
-        </p>
+            <hr>
 
-        <p style="font-size:18px; margin-bottom:25px; color:#005AA4;">
-            En PROTECH ARGENTINA apostamos al desarrollo de la industria nacional, invirtiendo en tecnología, diseño y producción local. Nuestro compromiso es seguir fabricando productos de alto nivel, con atención personalizada y un servicio que prioriza la satisfacción de cada cliente.
-        </p>
-
-        <hr style="margin:40px auto; width:120px; border:2px solid #0d6efd;">
-
-        <p style="
-            font-size:22px;
-            font-weight:bold;
-            color:#0d6efd;
-            margin-bottom:0;
-            color:#005AA4;
-        ">
-            Más que fabricar soportes y rodillos para bicicletas, construimos confianza, impulsamos el deporte y acompañamos a miles de ciclistas en cada kilómetro recorrido. Ese es nuestro desafío diario y la razón por la que seguimos creciendo, innovando y llevando la calidad argentina a todo el país.
-        </p>
-
-    </div>
-
-</main>
-
-<style>
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-</style>
-    <!-- End Contact -->
-
-    <!-- Div donde se insertará el formulario dinámicamente -->
-    <div id="myTabContent"></div>
-
-    <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Protech Argentina</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:3416899880">3416899880</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">rodillos.protech.ros@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://web.facebook.com/ProTech.Argentina.ar"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/protech.argentina"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <p class="nosotros-cierre">
+                Más que fabricar soportes y rodillos para bicicletas, construimos confianza, impulsamos el deporte y acompañamos a miles de ciclistas en cada kilómetro recorrido. Ese es nuestro desafío diario y la razón por la que seguimos creciendo, innovando y llevando la calidad argentina a todo el país.
+            </p>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </main>
+
+    <!-- Footer (se arma en assets/js/layout.js) -->
+    <div data-incluir="footer"></div>
 
     <!-- Scripts -->
-    <script src="assets/js/animista.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.5.0/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // Initialize emailjs with your user ID
-            emailjs.init('8x6BkW-564iZdIkR5');
-        })();
-    
-        // Add event listener to the contact form
-        document.getElementById('contact_form').addEventListener('submit', function(event) {
-            event.preventDefault();
-    
-            // Collect the form data
-            var name = document.getElementById('nombre').value;
-            var email = document.getElementById('telefono').value;
-            var subject = document.getElementById('subject').value;
-            var message = document.getElementById('message').value;
-    
-            // Create the email params
-            var params = {
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            };
-    
-            // Send the email using emailjs
-            emailjs.send('service_eureybs', 'template_7wfbxfs', params)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Mensaje enviado!',
-                        text: 'Tu mensaje ha sido enviado con éxito.',
-                        confirmButtonText: 'Aceptar'
-                    });
-                    // Reset the form
-                    document.getElementById('contact_form').reset();
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',
-                        confirmButtonText: 'Aceptar'
-                    });
-                });
-        });
-    </script>
-    
+    <script src="assets/js/animaciones.js"></script>
 </body>
+
 </html>

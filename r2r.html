@@ -1,208 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>ProtechArgentina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ready to Ride - Protech Argentina</title>
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="assets/img/general/apple-icon.png">
 
+    <!-- Librerías -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/animista.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<!--
-    
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
--->
+    <!-- Estilos del sitio -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/animaciones.css">
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">rodillos.protech.ros@gmail.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3416954151">3416954151</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://web.facebook.com/ProTech.Argentina.ar" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/protech.argentina" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav> 
-    <!-- Close Top Nav -->
+    <!-- Header (se arma en assets/js/layout.js) -->
+    <div data-incluir="header" data-variante="clasico" data-logo="./assets/img/general/nuevo_banner.jpg" data-telefono="3416954151"></div>
 
+    <!-- Botón flotante de WhatsApp -->
+    <div data-incluir="whatsapp" data-link="https://wa.me/3416954151"></div>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
-            <div class="containera" id="intro">
-                <div class="box">
-                    <img src="./assets/img/nuevo_banner.jpg" alt="imagenInicio" class="remeralogo tituloprimera">
-                    <img src="./assets/img/logo.png" alt="imagenLogo" class="imagenLogo tituloprimera">
-                </div>
-            </div>
-    
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-    
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between p-1" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PRODUCTOS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="rodillos.html">RODILLOS</a></li>
-                                <li><a class="dropdown-item" href="soportes.html">SOPORTES</a></li>
-                                <li><a class="dropdown-item" href="jersey.html">JERSEY</a></li>
-                                <li><a class="dropdown-item" href="merchandasing.html">MERCHANDISING</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="puntoventa.html">PUNTOS DE VENTA</a>
-                        </li>
-                        <li>
-                            <!-- Imagen pequeña dentro del nav -->
-        <a href="r2r.html" style="margin-top: 10px; display: block;">
-            <img src="./assets/img/nuevo_banner.jpg" alt="Ir a Nuevo" style="width: 120px; height: auto; display: block;">
-        </a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Close Header -->
-    <!--logo de whatsapp-->
-   <a href="https://wa.me/3416954151" class="whatsapp-button" target="_blank">
-    <img src="./assets/img/whatsapp.png" alt="WhatsApp">
-</a>
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-<div>
-    <p style="color: black;">.</p>
-</div>
+    <div class="r2r-espacio"></div>
 
-
-    <!-- Start Banner Hero -->
-     
+    <!-- Carrusel principal -->
     <div id="template-mo-zay-hero-carousel" class="carousel slide scale-up-ver-bottom" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <div class="container">
-                <div style="text-align: center; padding-top: 2rem;">
-                    <h2 style="font-size: 2.5rem; color: black;">Un estilo sobre dos ruedas</h2>
-                </div>
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/r2r1.jpg" alt="Imagen 1">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="r2r-slide-titulo">
+                        <h2>Un estilo sobre dos ruedas</h2>
                     </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div style="text-align: left; font-size: 1.1rem; color: #222;">
-                            <p style="color: black;">
-                                Nuestros productos están diseñados para brindarte comodidad, seguridad y un look único en cada salida.<br>
-                                Con materiales de primera calidad y diseños exclusivos.<br>
-                                Equipamiento pensado para los verdaderos Riders.<br>
-                                Consultanos por WhatsApp: <strong>3416954151</strong>
-                            </p>
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="assets/img/r2r/r2r1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="r2r-slide-texto">
+                                <p>
+                                    Nuestros productos están diseñados para brindarte comodidad, seguridad y un look único en cada salida.<br>
+                                    Con materiales de primera calidad y diseños exclusivos.<br>
+                                    Equipamiento pensado para los verdaderos Riders.<br>
+                                    Consultanos por WhatsApp: <strong>3416954151</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="r2r-slide-titulo">
+                        <h2>Facil de instalar</h2>
+                    </div>
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="assets/img/r2r/r2r2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="r2r-slide-texto">
+                                <p>
+                                    La nueva generación de bicicletas Ready 2 Ride llegó para acompañarte en cada truco, salto y desafío. <br>
+                                    ✔️ Chasis reforzado<br>
+                                    ✔️ Diseño original argentino<br>
+                                    ✔️ Pensada para riders que no se detienen<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="r2r-slide-titulo">
+                        <h2>Seguridad</h2>
+                    </div>
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="assets/img/r2r/r2r4.jpg" alt="Imagen 3">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="r2r-slide-texto">
+                                <p>
+                                    Diseñada para la seguridad y la diversión. Nuestra bicicleta para niños se acopla fácilmente a cualquier bicicleta de adulto, brindando estabilidad y control. ¡Así, los pequeños ciclistas pueden disfrutar del camino con total tranquilidad!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-            <div class="container">
-                <div style="text-align: center; padding-top: 2rem;">
-                    <h2 style="font-size: 2.5rem; color: black;">Facil de instalar</h2>
-                </div>
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/r2r2.jpg" alt="Imagen 2">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div style="text-align: left; font-size: 1.1rem; color: #222;">
-                            <p style="color: black;">
-                                La nueva generación de bicicletas Ready 2 Ride llegó para acompañarte en cada truco, salto y desafío. <br>
-                                ✔️ Chasis reforzado<br>
-                                ✔️ Diseño original argentino<br>
-                                ✔️ Pensada para riders que no se detienen<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-            <div class="container">
-                <div style="text-align: center; padding-top: 2rem;">
-                    <h2 style="font-size: 2.5rem; color: black;">Seguridad</h2>
-                </div>
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/r2r4.jpg" alt="Imagen 3">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div style="text-align: left; font-size: 1.1rem; color: #222;">
-                            <p style="color: black;">
-                                Diseñada para la seguridad y la diversión. Nuestra bicicleta para niños se acopla fácilmente a cualquier bicicleta de adulto, brindando estabilidad y control. ¡Así, los pequeños ciclistas pueden disfrutar del camino con total tranquilidad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
         <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
@@ -210,10 +107,8 @@ https://templatemo.com/tm-559-zay-shop
             <i class="fas fa-chevron-right"></i>
         </a>
     </div>
-    <!-- End Banner Hero -->
 
-
-    <!-- Start Categories of The Month -->
+    <!-- Ficha técnica -->
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
@@ -223,91 +118,29 @@ https://templatemo.com/tm-559-zay-shop
                 </p>
             </div>
         </div>
-        <div class="row" style="justify-content: center; display: flex;">
-  <div class="slide-right">
-    <a href="#">
-      <img src="./assets/img/r2r3.jpg" class="img-fluid border" style="display: block; margin: 0 auto;">
-    </a>
-  </div>
-</div>
-
+        <div class="row r2r-ficha">
+            <div class="slide-right">
+                <img src="assets/img/r2r/r2r3.jpg" class="img-fluid border" alt="Ficha técnica Ready to Ride">
+            </div>
+        </div>
     </section>
-    <!-- End Categories of The Month -->
 
-
-    <!-- Start Featured Product -->
-<section class="bg-light">
-  <div class="container py-5 text-center">
-    <a href="https://wa.me/3416954151" target="_blank" style="background-color: #25D366; color: white; padding: 15px 30px; font-size: 1.25rem; border-radius: 50px; text-decoration: none; display: inline-block;">
-      <i class="fab fa-whatsapp" style="margin-right: 10px;"></i> Contactanos por WhatsApp
-    </a>
-  </div>
-</section>
-
-    <!-- End Featured Product -->
-
-
-    <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Ready to Ride</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:3416899880">3416954151</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">rodillos.protech.ros@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://web.facebook.com/ProTech.Argentina.ar"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/protech.argentina"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Botón de WhatsApp -->
+    <section class="bg-light">
+        <div class="container py-5 text-center">
+            <a href="https://wa.me/3416954151" target="_blank" class="boton-whatsapp-grande">
+                <i class="fab fa-whatsapp"></i> Contactanos por WhatsApp
+            </a>
         </div>
+    </section>
 
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2024 ProtechArgentina
-                            | Designed by <a rel="sponsored" href="https://www.digitalnest.com.ar/" target="_blank">DigitalNest</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Footer (se arma en assets/js/layout.js) -->
+    <div data-incluir="footer" data-titulo="Ready to Ride" data-telefono="3416954151"></div>
 
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Start Script -->
-    <script src="assets/js/animista.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <!-- End Script -->
+    <script src="assets/js/animaciones.js"></script>
 </body>
 
 </html>

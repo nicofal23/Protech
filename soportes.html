@@ -1,165 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>Protech - Argentina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protech Argentina - Soportes</title>
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="assets/img/general/apple-icon.png">
 
+    <!-- Librerías -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/animista.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!--
-    
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
--->
+    <!-- Estilos del sitio -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/animaciones.css">
 </head>
 
 <body>
-    <header class="header-fondo">
+    <!-- Header (se arma en assets/js/layout.js) -->
+    <div data-incluir="header"></div>
 
-        <!-- Start Top Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top">
-            <div class="container text-light">
-                <div class="w-100 d-flex justify-content-between">
-                    <div>
-                        <i class="fa fa-envelope mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">
-                            rodillos.protech.ros@gmail.com
-                        </a>
+    <!-- Botón flotante de WhatsApp -->
+    <div data-incluir="whatsapp" data-link="https://wa.link/f7dyvu"></div>
 
-                        <i class="fa fa-phone mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3416899880">
-                            3416899880
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="text-light" href="https://web.facebook.com/ProTech.Argentina.ar" target="_blank" rel="sponsored">
-                            <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                        </a>
-
-                        <a class="text-light" href="https://www.instagram.com/protech.argentina" target="_blank">
-                            <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- End Top Nav -->
-
-
-        <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light shadow">
-
-            <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
-
-                <div class="containera" id="intro">
-                    <div class="box">
-                        <img src="./assets/img/LOGOPROTECH.png" alt="Logo" class="imagenLogo tituloprimera">
-                    </div>
-                </div>
-
-                <button class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#templatemo_main_nav">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between p-1"
-                    id="templatemo_main_nav">
-
-                    <div class="flex-fill">
-
-                        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">INICIO</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown">
-
-                                    PRODUCTOS
-
-                                </a>
-
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="rodillos.html">RODILLOS</a></li>
-                                    <li><a class="dropdown-item" href="soportes.html">SOPORTES</a></li>
-                                    <li><a class="dropdown-item" href="index.html">ACCESORIOS</a></li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">CONTACTO</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="puntoventa.html">PUNTOS DE VENTA</a>
-                            </li>
-
-                            <li class="tienda">
-                                <a href="https://protechargentina.mitiendanube.com/" style="margin-top:10px;display:block;">
-                                    <h3>Compras Online</h3>
-                                    <img src="./assets/img/CARRITO.png"
-                                        alt="Nuevo"
-                                        style="width:80px;height:auto;display:block;">
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </nav>
-        <!-- End Header -->
-
-    </header>
-    <!-- Close Header -->
-    <!--logo de whatsapp-->
-    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
-        <img src="./assets/img/whatsapp.png" alt="WhatsApp">
-    </a>
-    </div>
-    </nav>
-    <!-- Close Header -->
-    </div>
-
-    <!-- Start Content -->
+    <!-- Contenido -->
     <div class="container py-5">
         <div class="row">
+
+            <!-- Categorías -->
             <div class="col-lg-3 slide-right">
                 <h1 class="h2 pb-4">Categorías</h1>
                 <ul class="list-unstyled">
@@ -174,25 +45,23 @@ https://templatemo.com/tm-559-zay-shop
                     </li>
                 </ul>
             </div>
+
+            <!-- Productos -->
             <div class="col-lg-9">
                 <h2 class="titulocategory">SOPORTES:</h2>
                 <div class="row">
-                    <!-- Product Cards 1 -->
+                    <!-- SOPORTE AIR-1 -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soporte/SOPORTEAIR1.jpg"
-                                alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/SOPORTEAIR1.jpg" alt="SOPORTE AIR-1">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE AIR-1</p>
-                                <p class="descripcionshop">soporte apto para todos los rodados. tiene la particularidad
-                                    de que la rueda trasera queda en el aire y gira para poder realizar mantenimiento de
-                                    mecánica o simplemente limpieza.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE AIR-1</p>
+                                <p class="descripcionshop">soporte apto para todos los rodados. tiene la particularidad de que la rueda trasera queda en el aire y gira para poder realizar mantenimiento de mecánica o simplemente limpieza.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/5wg7fv" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/5wg7fv" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn1">
+                                    <button class="btn btn-success" data-abrir-modal="modal-air-1">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
@@ -200,25 +69,18 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                     </div>
 
-                    <!-- Product Cards 2-->
-
-
-                    <!-- Product Cards 3 -->
+                    <!-- SOPORTE D-2 (MTB) -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soporte/SOPORTED2Mtb.jpg"
-                                alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/SOPORTED2Mtb.jpg" alt="SOPORTE D-2 (MTB)">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE D-2 (MTB)</p>
-                                <p class="descripcionshop">soporte que permite dejar la bicicleta parada y evitar así
-                                    que se caiga y se golpee. sirve para cualquier bici con cubiertas desde 1.9 a 2.4 de
-                                    ancho.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE D-2 (MTB)</p>
+                                <p class="descripcionshop">soporte que permite dejar la bicicleta parada y evitar así que se caiga y se golpee. sirve para cualquier bici con cubiertas desde 1.9 a 2.4 de ancho.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/j4klir" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/j4klir" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn3">
+                                    <button class="btn btn-success" data-abrir-modal="modal-d2-mtb">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
@@ -226,149 +88,132 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                     </div>
 
-                    <!-- Product Cards 4 -->
+                    <!-- SOPORTE D-3 (PISTA Y RUTA) -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soporte/MODD-3PISTA RUTA.jpg"
-                                alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/MODD-3PISTA-RUTA.jpg" alt="SOPORTE D-3 (PISTA Y RUTA)">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE D-3 (PISTA Y RUTA)</p>
-                                <p class="descripcionshop">soporte que permite dejar la bicicleta parada y evitar así
-                                    que se caiga y se golpee. sirve para cualquier bici con cubiertas desde finas.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE D-3 (PISTA Y RUTA)</p>
+                                <p class="descripcionshop">soporte que permite dejar la bicicleta parada y evitar así que se caiga y se golpee. sirve para cualquier bici con cubiertas desde finas.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/dt11e9" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/dt11e9" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn4">
+                                    <button class="btn btn-success" data-abrir-modal="modal-d3-pista-ruta">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin card-->
-                    <!-- Product Cards 2 -->
+
+                    <!-- SOPORTE G-1 -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soporte/SOPORTeG13.jpg"
-                                alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/SOPORTeG13.jpg" alt="SOPORTE G-1">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE G-1</p>
-                                <p class="descripcionshop">soporte para colgar la bici de la pared y así optimizar
-                                    espacio. apto para cualquier rodado.
-                                </p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE G-1</p>
+                                <p class="descripcionshop">soporte para colgar la bici de la pared y así optimizar espacio. apto para cualquier rodado.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/e3igeu" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/e3igeu" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn2">
+                                    <button class="btn btn-success" data-abrir-modal="modal-g1">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin card-->
-                    <!-- Product Cards 7 -->
+
+                    <!-- SOPORTE DE PARED 3-3 -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soportepared0.jpg"
-                                alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/soportepared0.jpg" alt="SOPORTE DE PARED 3-3">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE DE PARED 3-3</p>
-                                <p class="descripcionshop"> soporte para colgar la bici desde el pedal y quedar a 45° de inclinación, ganando un mayor espacio. Incluye apoyo de las ruedas.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE DE PARED 3-3</p>
+                                <p class="descripcionshop">soporte para colgar la bici desde el pedal y quedar a 45° de inclinación, ganando un mayor espacio. Incluye apoyo de las ruedas.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/91sl5o" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/91sl5o" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn7">
+                                    <button class="btn btn-success" data-abrir-modal="modal-pared-3-3">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin card-->
-                    <!-- Product Cards 6 -->
+
+                    <!-- SOPORTE DE PARED G-2.P -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/G2foto.jpg" alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/G2foto.jpg" alt="SOPORTE DE PARED G-2.P">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE DE PARED G-2.P</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE DE PARED G-2.P</p>
                                 <p class="descripcionshop">Soporte de pared para bici cualquier rodado, agarre desde el cuadro caño superior central.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/91sl5o" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/91sl5o" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn6">
+                                    <button class="btn btn-success" data-abrir-modal="modal-g2p">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin card-->
-                    <!-- Product Cards 8 -->
+
+                    <!-- SOPORTE DE TECHO AUTO SPORT-1 -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soporte/SOPORTEDETECHOMODSPORT-1.jpg" alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/SOPORTEDETECHOMODSPORT-1.jpg" alt="SOPORTE DE TECHO AUTO SPORT-1">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE DE TECHO AUTO SPORT-1</p>
-                                <p class="descripcionshop">soporte para bicicleta para techo de vehículo. tipo bandeja.
-                                    se coloca la bici sacando la rueda delantera y ajustando desde la horquilla al
-                                    soporte. viene con todos sus accesorios. apto para todo tipo de horquillas.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE DE TECHO AUTO SPORT-1</p>
+                                <p class="descripcionshop">soporte para bicicleta para techo de vehículo. tipo bandeja. se coloca la bici sacando la rueda delantera y ajustando desde la horquilla al soporte. viene con todos sus accesorios. apto para todo tipo de horquillas.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/91sl5o" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/91sl5o" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn8">
+                                    <button class="btn btn-success" data-abrir-modal="modal-techo-sport-1">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin card-->
-                    <!-- Product Cards 9 -->
+
+                    <!-- SOPORTE TECHO AUTO SPORT-ECO -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soportetechoeco/techoeco1.jpg" alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/techoeco1.jpg" alt="SOPORTE TECHO AUTO SPORT-ECO">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE TECHO AUTO SPORT-ECO</p>
-                                <p class="descripcionshop">soporte para bicicleta para techo de vehículo. caño
-                                    estructural 20x20. se coloca la bici sacando la rueda delantera y ajustando desde la
-                                    horquilla al soporte. viene con todos sus accesorios. apto para todo tipo de
-                                    horquillas.</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE TECHO AUTO SPORT-ECO</p>
+                                <p class="descripcionshop">soporte para bicicleta para techo de vehículo. caño estructural 20x20. se coloca la bici sacando la rueda delantera y ajustando desde la horquilla al soporte. viene con todos sus accesorios. apto para todo tipo de horquillas.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/91sl5o" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/91sl5o" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn9">
+                                    <button class="btn btn-success" data-abrir-modal="modal-techo-sport-eco">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Product Cards 10 -->
+
+                    <!-- SOPORTE PLEGABLE D-5 -->
                     <div class="col-md-4 mb-4 slide-left">
                         <div class="card product-card rounded-0 imagenshop">
-                            <img class="card-img-top img-fluid" src="assets/img/soportetechoeco/D-5.jpg" alt="Product Image">
+                            <img class="card-img-top img-fluid" src="assets/img/soportes/D-5.jpg" alt="SOPORTE PLEGABLE D-5">
                             <div class="card-body">
-                                <p href="#" class="h4 card-title text-decoration-none">SOPORTE PLEGABLE D-5</p>
+                                <p class="h4 card-title text-decoration-none">SOPORTE PLEGABLE D-5</p>
                                 <p class="descripcionshop">Soporte para bicicleta plegable de acero resistente. Diseño compacto que se pliega para ahorrar espacio cuando no está en uso. Ideal para garajes, talleres u hogares.</p>
                                 <div class="d-flex justify-content-center mt-3 conjunto">
                                     <button class="btn btn-success">
-                                        <a href="https://wa.link/qvgx03" target="_blank"><i
-                                                class="fa-brands fa-whatsapp"></i> Consultar</a>
+                                        <a href="https://wa.link/qvgx03" target="_blank"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
                                     </button>
-                                    <button class="btn btn-success" id="openModalBtn10">
+                                    <button class="btn btn-success" data-abrir-modal="modal-plegable-d5">
                                         <i class="far fa-eye"></i> Ver más
                                     </button>
                                 </div>
@@ -377,288 +222,188 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
             </div>
-        </div>
-        <!--fin card-->
 
-
-
-        <!-- Product Modal 1 -->
-        <div id="productModal1" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soporte/SOPORTEAIR1.jpg" alt="Image 1">
+            <!-- ===== Modales (se abren con "Ver más") ===== -->
+            <!-- Modal: SOPORTE AIR-1 -->
+            <div id="modal-air-1" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/SOPORTEAIR1.jpg" alt="SOPORTE AIR-1 - foto 1">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/5wg7fv" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/5wg7fv" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
 
-        <!-- Product Modal 2 -->
-        <div id="productModal2" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soporte/soporteg1.jpg" alt="Image 1">
-                        <img src="assets/img/soporte/soporteg1-1.jpg" alt="Image 2">
-                        <img src="assets/img/soporte/SOPORTeG13.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/SOPORTEG-12.jpg" alt="Image 3">
+            <!-- Modal: SOPORTE D-2 (MTB) -->
+            <div id="modal-d2-mtb" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/MODM-2PLUS.jpg" alt="SOPORTE D-2 (MTB) - foto 1">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/j4klir" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Another Product</h5>
-                <button id="addToCartBtn2" class="whatsapp-button1">
-                    <a href="https://wa.link/e3igeu" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
 
-        <!-- Product Modal 3 -->
-        <div id="productModal3" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soporte/MODM-2PLUS.jpg" alt="Image 1">
+            <!-- Modal: SOPORTE D-3 (PISTA Y RUTA) -->
+            <div id="modal-d3-pista-ruta" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/D-3PISTA1.jpg" alt="SOPORTE D-3 (PISTA Y RUTA) - foto 1">
+                            <img src="assets/img/soportes/D-3PISTA2.jpg" alt="SOPORTE D-3 (PISTA Y RUTA) - foto 2">
+                            <img src="assets/img/soportes/MODD-3PISTA-RUTA.jpg" alt="SOPORTE D-3 (PISTA Y RUTA) - foto 3">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/dt11e9" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Another Product</h5>
-                <button id="addToCartBtn2" class="whatsapp-button1">
-                    <a href="https://wa.link/j4klir" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 4 -->
-        <div id="productModal4" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soporte/D-3PISTA1.jpg" alt="Image 1">
-                        <img src="assets/img/soporte/D-3PISTA2.jpg" alt="Image 2">
-                        <img src="assets/img/soporte/MODD-3PISTA RUTA.jpg" alt="Image 3">
+
+            <!-- Modal: SOPORTE G-1 -->
+            <div id="modal-g1" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/soporteg1.jpg" alt="SOPORTE G-1 - foto 1">
+                            <img src="assets/img/soportes/soporteg1-1.jpg" alt="SOPORTE G-1 - foto 2">
+                            <img src="assets/img/soportes/SOPORTeG13.jpg" alt="SOPORTE G-1 - foto 3">
+                            <img src="assets/img/soportes/SOPORTEG-12.jpg" alt="SOPORTE G-1 - foto 4">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/e3igeu" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/dt11e9" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 5 -->
-        <div id="productModal5" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/logo.png" alt="Image 1">
+
+            <!-- Modal: SOPORTE DE PARED 3-3 -->
+            <div id="modal-pared-3-3" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/soportepared0.jpg" alt="SOPORTE DE PARED 3-3 - foto 1">
+                            <img src="assets/img/soportes/soportepared1.jpg" alt="SOPORTE DE PARED 3-3 - foto 2">
+                            <img src="assets/img/soportes/soportepared2.jpg" alt="SOPORTE DE PARED 3-3 - foto 3">
+                            <img src="assets/img/soportes/soportepared3.jpg" alt="SOPORTE DE PARED 3-3 - foto 4">
+                            <img src="assets/img/soportes/soportepared4.jpg" alt="SOPORTE DE PARED 3-3 - foto 5">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 6 -->
-        <div id="productModal6" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/G2foto.jpg" alt="Image 3">
+
+            <!-- Modal: SOPORTE DE PARED G-2.P -->
+            <div id="modal-g2p" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/G2foto.jpg" alt="SOPORTE DE PARED G-2.P - foto 1">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 7 -->
-        <div id="productModal7" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soportepared0.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/soportepared1.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/soportepared2.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/soportepared3.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/soportepared4.jpg" alt="Image 3">
+
+            <!-- Modal: SOPORTE DE TECHO AUTO SPORT-1 -->
+            <div id="modal-techo-sport-1" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/SOPORTEDETECHOAUTOsport-1.jpg" alt="SOPORTE DE TECHO AUTO SPORT-1 - foto 1">
+                            <img src="assets/img/soportes/SOPORTEDETECHOMODSPORT-1.jpg" alt="SOPORTE DE TECHO AUTO SPORT-1 - foto 2">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 8 -->
-        <div id="productModal8" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soporte/SOPORTEDETECHOAUTOsport-1.jpg" alt="Image 3">
-                        <img src="assets/img/soporte/SOPORTEDETECHOMODSPORT-1.jpg" alt="Image 3">
+
+            <!-- Modal: SOPORTE TECHO AUTO SPORT-ECO -->
+            <div id="modal-techo-sport-eco" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/techoeco1.jpg" alt="SOPORTE TECHO AUTO SPORT-ECO - foto 1">
+                            <img src="assets/img/soportes/techoeco2.jpg" alt="SOPORTE TECHO AUTO SPORT-ECO - foto 2">
+                            <img src="assets/img/soportes/techoeco3.jpg" alt="SOPORTE TECHO AUTO SPORT-ECO - foto 3">
+                            <img src="assets/img/soportes/techoeco4.jpg" alt="SOPORTE TECHO AUTO SPORT-ECO - foto 4">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
-        </div>
-        <!-- Product Modal 9 -->
-        <div id="productModal9" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soportetechoeco/techoeco1.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/techoeco2.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/techoeco3.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/techoeco4.jpg" alt="Image 3">
 
+            <!-- Modal: SOPORTE PLEGABLE D-5 -->
+            <div id="modal-plegable-d5" class="modal modal-producto">
+                <div class="modal-content scale-up-center">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="assets/img/soportes/D-5.jpg" alt="SOPORTE PLEGABLE D-5 - foto 1">
+                            <img src="assets/img/soportes/D-5.jpg" alt="SOPORTE PLEGABLE D-5 - foto 2">
+                            <img src="assets/img/soportes/D-5.jpg" alt="SOPORTE PLEGABLE D-5 - foto 3">
+                            <img src="assets/img/soportes/D-5.jpg" alt="SOPORTE PLEGABLE D-5 - foto 4">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
                     </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
+                    <button class="whatsapp-button1">
+                        <a href="https://wa.link/qvgx03" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </button>
                 </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="https://wa.link/91sl5o" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
             </div>
+
         </div>
-        <div id="productModal10" class="modal">
-            <div class="modal-content scale-up-center">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="assets/img/soportetechoeco/D-5.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/D-5.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/D-5.jpg" alt="Image 3">
-                        <img src="assets/img/soportetechoeco/D-5.jpg" alt="Image 3">
-
-                    </div>
-                    <button class="carousel-control prev">❮</button>
-                    <button class="carousel-control next">❯</button>
-                </div>
-                <h5>Oupidatat non</h5>
-                <button id="addToCartBtn1" class="whatsapp-button1">
-                    <a href="wa.link/qvgx03" class="linkwsp" target="_blank"><i class="fab fa-whatsapp"></i>
-                        Consultar</a>
-                </button>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
     </div>
-    </div>
-    <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Protech Argentina</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:341689980">3416899880</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none"
-                                href="mailto:rodillos.protech.ros@gmail.com">rodillos.protech.ros@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Footer (se arma en assets/js/layout.js) -->
+    <div data-incluir="footer"></div>
 
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://web.facebook.com/ProTech.Argentina.ar"><i
-                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.instagram.com/protech.argentina"><i
-                                    class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2024 ProtechArgentina
-                            | Designed by <a rel="sponsored" href="https://www.digitalnest.com.ar/"
-                                target="_blank">DigitalNest</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Start Script -->
-    <script src="assets/js/animista.js"></script>
-    <script src="./assets/js/scriptsoportes.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/animaciones.js"></script>
+    <script src="assets/js/productos.js"></script>
 </body>
 
 </html>

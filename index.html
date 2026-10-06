@@ -1,176 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>ProtechArgentina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protech Argentina</title>
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="assets/img/general/apple-icon.png">
 
+    <!-- Librerías -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/animista.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<!--
-    
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
--->
+    <!-- Estilos del sitio -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/animaciones.css">
 </head>
 
 <body>
-    <header class="header-fondo">
+    <!-- Header (se arma en assets/js/layout.js) -->
+    <div data-incluir="header"></div>
 
-        <!-- Start Top Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top">
-            <div class="container text-light">
-                <div class="w-100 d-flex justify-content-between">
-                    <div>
-                        <i class="fa fa-envelope mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:rodillos.protech.ros@gmail.com">
-                            rodillos.protech.ros@gmail.com
-                        </a>
+    <!-- Botón flotante de WhatsApp -->
+    <div data-incluir="whatsapp" data-link="https://wa.link/f7dyvu"></div>
 
-                        <i class="fa fa-phone mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3416899880">
-                            3416899880
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="text-light" href="https://web.facebook.com/ProTech.Argentina.ar" target="_blank" rel="sponsored">
-                            <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                        </a>
-
-                        <a class="text-light" href="https://www.instagram.com/protech.argentina" target="_blank">
-                            <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- End Top Nav -->
-
-
-        <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light shadow">
-
-            <div class="container d-flex justify-content-between align-items-center Contenedortitulo">
-
-                <div class="containera" id="intro">
-                    <div class="box">
-                        <img src="./assets/img/LOGOPROTECH.png" alt="Logo" class="imagenLogo tituloprimera">
-                    </div>
-                </div>
-
-                <button class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#templatemo_main_nav">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between p-1"
-                    id="templatemo_main_nav">
-
-                    <div class="flex-fill">
-
-                        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">INICIO</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown">
-
-                                    PRODUCTOS
-
-                                </a>
-
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="rodillos.html">RODILLOS</a></li>
-                                    <li><a class="dropdown-item" href="soportes.html">SOPORTES</a></li>
-                                    <li><a class="dropdown-item" href="index.html">ACCESORIOS</a></li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">CONTACTO</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="puntoventa.html">PUNTOS DE VENTA</a>
-                            </li>
-
-                            <li class="tienda">
-                                <a href="https://protechargentina.mitiendanube.com/" style="margin-top:10px;display:block;">
-                                    <h3>Compras Online</h3>
-                                    <img src="./assets/img/CARRITO.png"
-                                        alt="Nuevo"
-                                        style="width:80px;height:auto;display:block;">
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </nav>
-        <!-- End Header -->
-
-    </header>
-    <!--logo de whatsapp-->
-    <a href="https://wa.link/f7dyvu" class="whatsapp-button" target="_blank">
-        <img src="./assets/img/whatsapp.png" alt="WhatsApp">
-    </a>    
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-
-    <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide scale-up-ver-bottom " data-bs-ride="carousel">
+    <!-- Carrusel principal -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide scale-up-ver-bottom" data-bs-ride="carousel">
         <ol class="carousel-indicators">
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
@@ -184,7 +41,7 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                            <img class="img-fluid" src="assets/img/inicio/banner_img_01.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -203,7 +60,7 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                            <img class="img-fluid" src="assets/img/inicio/banner_img_02.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -222,7 +79,7 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                            <img class="img-fluid" src="assets/img/inicio/banner_img_03.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -242,10 +99,8 @@ https://templatemo.com/tm-559-zay-shop
             <i class="fas fa-chevron-right"></i>
         </a>
     </div>
-    <!-- End Banner Hero -->
 
-
-    <!-- Start Categories of The Month -->
+    <!-- Categorías -->
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
@@ -257,112 +112,30 @@ https://templatemo.com/tm-559-zay-shop
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3 slide-right">
-                <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+                <a href="soportes.html"><img src="assets/img/inicio/category_img_01.jpg" class="rounded-circle img-fluid border" alt="SOPORTES"></a>
                 <h5 class="text-center mt-3 mb-3">SOPORTES</h5>
                 <p class="text-center"><a href="soportes.html" class="btn btn-success">VER</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3 slide-top">
-                <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                <a href="jersey.html"><img src="assets/img/inicio/category_img_02.jpg" class="rounded-circle img-fluid border" alt="JERSEY"></a>
                 <h2 class="h5 text-center mt-3 mb-3">JERSEY</h2>
                 <p class="text-center"><a href="jersey.html" class="btn btn-success">VER</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3 slide-left">
-                <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+                <a href="rodillos.html"><img src="assets/img/inicio/category_img_03.jpg" class="rounded-circle img-fluid border" alt="RODILLOS"></a>
                 <h2 class="h5 text-center mt-3 mb-3">RODILLOS</h2>
                 <p class="text-center"><a href="rodillos.html" class="btn btn-success">VER</a></p>
             </div>
         </div>
     </section>
-    <!-- End Categories of The Month -->
 
+    <!-- Footer (se arma en assets/js/layout.js) -->
+    <div data-incluir="footer"></div>
 
-    <!-- Start Featured Product -->
-<section class="bg-light">
-    <div class="container py-5">
-        <div class="row text-center py-3">
-            <div class="col-lg-6 m-auto">
-                <h2 class="tituloMercha  slide-top">Merchandising para Tu Negocio</h2>
-                <p class="parrafoMercha slide-left">
-                    Ofrecemos soluciones de merchandising personalizadas para potenciar la visibilidad de tu negocio. Descubre cómo nuestros productos pueden ayudarte a destacarte en el mercado.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="card h-100 border-0 slide-left">
-                    <a href="./">
-                        <img src="./assets/img/mercha.png" class="card-img-top" alt="Merchandising">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- End Featured Product -->
-
-
-    <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Protech Argentina</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:3416899880">3416899880</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">rodillos.protech.ros@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://web.facebook.com/ProTech.Argentina.ar"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/protech.argentina"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2024 ProtechArgentina
-                            | Designed by <a rel="sponsored" href="https://www.digitalnest.com.ar/" target="_blank">DigitalNest</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Start Script -->
-    <script src="assets/js/animista.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <!-- End Script -->
+    <script src="assets/js/animaciones.js"></script>
 </body>
 
 </html>
